@@ -1,16 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
   int n=7;
-  for(int i=1;i<=n;i++){
-    for(int j=1;j<=7;j++){
-      if(j>=8-i){
-        printf("%d ",i);
-      }else{
+  for(int j=1;j<=7;j++){
+    for(int i=7;i>=1;i--){
+      if(i>=7-j){
         printf(" ");
+      }else {
+        printf("%d ",j)
       }
-      
     }
-   printf("\n")
-  }
+    printf("\n");
+}
   return 0;
 }
